@@ -1,0 +1,162 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background: url(../Images/backround.jpeg);
+    background-size: cover;
+}
+
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar a{
+    color:#322e2f;
+}
+
+.navbar .logo{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #12a4d9;
+}
+
+.navbar span{
+    color: rgb(244, 127, 127);;
+}
+
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+   margin: 0 25px;
+}
+
+
+.navbar .nav-links ul li.active a{
+   color: #12a4d9;
+   font-weight: 600;
+ }
+
+ .navbar .fa-solid{
+    position: absolute;
+    width: 35px;
+    top: 50px;
+    right: 50px;
+    display: none;
+ }
+
+ .nav-links.mobile-menu{
+    margin-left: 0;
+
+ }
+
+ header .centre{
+    float: left;
+    margin-left: 60%;
+    margin-top: 300px;
+    flex-wrap: wrap;
+ }
+
+ .centre p{
+    width: 30vw;
+    padding: 20px;
+    border: 2px solid red;
+    font-family: sans-serif;
+    font-size: 18px;
+    height: 15vh;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #12a4d9;
+    border-radius: 50px/50px;
+    opacity: 0.8;
+ }
+
+ .centre button{
+    width: 25%;
+    padding: 10px;
+    height: 50px;
+    color: #322e2f;
+    margin-top: 35px;
+    margin-left: 40%;
+ }
+
+@media screen and (max-width:900px){
+    .navbar{
+        padding: 0;
+    }
+    .navbar .fa-solid{
+        display: block;
+    }
+
+    .nav-links{
+       top: 0;
+       left: 0;
+       position: absolute;
+       backdrop-filter: blur(8px);
+       background-color: #e7eee873;
+       width: 100%;
+       font-size: 12px;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: -100%;
+       transition: all 0.5s ease;
+       
+    }
+    .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+
+
+.navbar .nav-links ul li{
+    margin: 25px 0;
+ }
+
+.navbar .logo{
+   position: absolute;
+   top: 40px;
+   left: 10px;
+}
+
+.centre p{
+    width: 30vw;
+    font-size: 5px;
+    text-transform: none;
+    height: 90px;
+}
+
+header .centre{
+    flex-wrap: wrap;
+    margin-left: -30%;
+ }
+
+    
+ }
