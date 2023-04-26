@@ -15,6 +15,11 @@ header{
     background-size: cover;
 }
 
+.logo-img{
+   position: absolute;
+   left: 10px;
+}
+
 .navbar{
     position: absolute;
     padding: 50px;
@@ -32,6 +37,7 @@ header{
     font-size: 3rem;
     font-weight: bold;
     color: #12a4d9;
+    margin-top: 100px;
 }
 
 .navbar span{
@@ -93,11 +99,9 @@ header{
  .centre p{
     
     padding: 20px;
-   
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 1px;
-   
     background-color: #fff;
     color: #322e2f;
     border-radius: 50px/50px;
@@ -210,6 +214,20 @@ header{
 
  }
 
+ .centre .inputSubmit{
+   padding: 0px 20px;
+    background-color: #12a4d9;
+    color: #322e2f;
+    border-radius: 20px/50px;
+    text-transform: uppercase;
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+ }
+
  .col p{
     color: #fff;
     font-size: 20px;
@@ -230,6 +248,52 @@ header{
  .row .Icon i:hover{
     color: #12a4d9;
  }
+
+ .foooter-col input[type="mail"],input[type="text"]{
+   padding: 15px;
+   border-radius: 5px;
+   border: none;
+   background-color: #f2f2f2;
+   margin-bottom: 35px;
+   outline: none;
+}
+
+
+#principal{
+   display: grid;
+   height: 97vh;
+ }
+
+ .nav{
+   background-color: #b9f1c5;
+   font-family: sans-serif;
+ }
+ main{
+   background-color: #86acf2;
+   font-family: sans-serif;
+ }
+ .sideBar{
+   background-color: #32ae4f;
+   font-family: sans-serif;
+ }
+ .firstElement{
+   background-color: #49d4de;
+   font-family: sans-serif;
+ }
+ .secondElement{
+   background-color: #f763bf;
+   font-family: sans-serif;
+ }
+ .thirdElement{
+   background-color: #32ae4f;
+   font-family: sans-serif;
+ }
+ #principal footer{
+   background-color: #232e4f;
+   font-family: sans-serif;
+ }
+
+
 
 @media screen and (max-width:900px){
     .navbar{
@@ -253,12 +317,25 @@ header{
        align-items: center;
        margin-left: -100%;
        transition: all 0.5s ease;
-       
     }
     .nav-links ul{
        display: flex;
        flex-direction: column;
        align-items: center;
+     }
+     .centre{
+      top: 0;
+      left: 0;
+      position: absolute;
+      backdrop-filter: blur(8px);
+      background-color: #e7eee873;
+      width: 100%;
+      font-size: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+      transition: all 0.5s ease;
      }
 
 
@@ -282,11 +359,14 @@ header{
  header .centre{
     flex-direction: column;
     padding: 20px 30px;
-   
     margin-bottom: 20px;
     height: 100px;
-   
 }
+
+
+#principal{
+   flex-wrap: wrap;
+ }
 
 footer .row{
     flex-direction: column;
@@ -300,6 +380,16 @@ footer .foooter-col ul{
 
 .foooter-col input{
     width: 100%;
+}
+
+.centre input{
+   width: 100%;
+}
+
+.centre input p{
+   flex-direction: column;
+   padding: 20px 30px;
+   font-size: 10px;
 }
 
  }

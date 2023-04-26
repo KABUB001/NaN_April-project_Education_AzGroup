@@ -4,4 +4,5 @@ const navLinks = document.querySelector(".nav-links")
 
 menuHumberger.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile-menu')
+   centre.classList.toggle('mobile-menu')
 })
