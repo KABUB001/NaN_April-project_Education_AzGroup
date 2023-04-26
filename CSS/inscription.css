@@ -9,7 +9,8 @@ body{
 }
 
 .container{
-    max-width: 40%;
+    width: 100%;
+    max-width: 900px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 150px;
@@ -20,7 +21,7 @@ body{
     overflow: hidden;
 }
 
-.container .form{
+.container form{
   width: 60%;
   background-color: #12a4d9;
   border-top-left-radius: 30%;
@@ -54,9 +55,10 @@ body{
 .titre p{
   font-size: 25px;
   text-align: center;
+  font-family: sans-serif;
 }
   
-  .form h1:first-child {
+  form h1:first-child {
     color: #322e2f;
     text-align: center;
     font-size: 2rem;
@@ -65,20 +67,19 @@ body{
     margin-top: 30px;
   }
 
-  .form .social{
-    margin: 20px;
+  form .social{
+    margin: 15px;
     display:flex ;
-    flex-wrap: wrap;
     justify-content: center;
     color: #fff;
     transition: 0.5s;
 }
 
-.form .social :hover{
+form .social :hover{
     transform: translateY(-10px);
 }
 
-.form .social p{
+form .social p{
     padding: 10px;
     margin-left: 10px;
     border: 2px solid  #322e2f;
@@ -87,12 +88,12 @@ body{
     cursor: pointer;
 }
   
-  .form .user-box {
+  form .user-box {
     position: relative;
     bottom: 30px;
   }
   
-  .form .user-box input {
+  form .user-box input {
     width: 80%;
     padding: 10px 0;
     font-size: 16px;
@@ -104,58 +105,42 @@ body{
     outline: none;
     background: transparent;
     flex-wrap: wrap;
-  
   }
+
+  form .user input {
+    width: 80%;
+    color: #fff;
+    margin-left: 11%;
+    border: 1px solid #fff ;
+    background: transparent;
+    flex-wrap: wrap;
+    outline: none;
+    height: 170px;
+  }
+
+
   
-  .form .user-box label {
+  form .user-box label {
     font-family: sans-serif;
     position: absolute;
-    margin: 20px;
     margin-left: 11%;
     top: 0;
     left: 0;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     pointer-events: none;
     transition: .5s;
     flex-wrap: wrap;
-
   }
   
-  .form .user-box input:focus ~ label,
-  .form .user-box input:valid ~ label {
+  form .user-box input:focus ~ label,
+  form .user-box input:valid ~ label {
     top: -20px;
     left: 0;
     color: #322e2f;
     font-size: 13px;
   }
-  
-  .form form button {
-    position: relative;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    color: #000;
-    font-size: 13px;
-    overflow: hidden;
-    margin-top: 40px;
-    border-radius: 20px;
-    flex-wrap: wrap;
-  }
-
-
-  textarea{ 
-    width: 60%; 
-    margin-left: 70px;
-    align-items: center;
-    border: none;
-    outline: none;
-    color: #322e2f;
-    font-family: sans-serif;
-    font-size: 15px;
-  }
-
 
 .button{
   font-size: 20px;
@@ -168,10 +153,12 @@ body{
   background: #322e2f;
   transition: all 0.3s ease-out;
   outline: none;
-  margin-left: 70%;
+  /*margin-left: 67%;*/
   position: relative;
   top: 20px;
   font-family: sans-serif;
+  float: right;
+  margin-right: 35px;
 }
 
 
@@ -192,7 +179,6 @@ body{
   opacity: 1;
 }
 
-
 .popup{
   margin: 6rem auto;
   padding: 2rem;
@@ -203,15 +189,17 @@ body{
   transition: all 0.4s ease-in-out;
 }
 
-
 .popup .cross{
-  position: absolute;
+  position: relative;
+  left: 90%;
   top: 1rem;
   right: 1.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s ease;
+  color: #322e2f;
 }
 
 .popup .cross :hover{
@@ -222,7 +210,7 @@ body{
   color: #fff;
   font-family: sans-serif;
   margin: 20px;
-font-size: 2rem;
+  font-size: 2rem;
 }
 
 .popup p{
@@ -230,4 +218,55 @@ font-size: 2rem;
   font-family: sans-serif;
   font-size: 15px;
   margin: 10px;
+}
+
+@media screen and (max-width:970px){
+  .container{
+    padding: 0;
+    overflow: hidden;
+  }
+
+  form .social{
+    display: flex;
+    margin-left: 0;
+}
+
+form .social p{
+  border-radius: 70%;
+  margin-top: 2px;
+  
+}
+
+.form .user-box {
+  margin-bottom: 0px;
+  padding-top: 0px;
+ 
+}
+
+.form .user-box input {
+  padding: 10px 0;
+  margin: 5px;
+  margin-left: 10%;
+  flex-wrap: wrap;
+}
+
+form .user-box label {
+  margin: 15px;
+  margin-left: 11%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width:500px){
+
+.container .titre{
+ display: none;
+}
+.container form{
+  width: 100%;
+}
+
 }

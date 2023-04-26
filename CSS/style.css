@@ -136,6 +136,51 @@ header{
     margin-left: 0;
  }
 
+ #principal{
+   font-family: sans-serif;
+   display: grid;
+   height: 97vh;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 0.2fr 1.5fr 2fr 1fr;
+   grid-template-areas: 
+   "nav nav nav nav"
+   "sideBar main main main"
+   "sideBar firstElement secondElement thirdElement"
+   "sideBar footer footer footer"
+   ;
+   text-align: center;
+   gap: 0.2rem;
+ }
+
+ #principal nav{
+   background-color: #6b7b8c;
+   grid-area: nav;
+ }
+ main{
+   background-color: #6b7b8c;
+   grid-area:  main;
+ }
+ .sideBar{
+   background-color: #6b7b8c;
+   grid-area: sideBar;
+ }
+ .firstElement{
+   background-color: #6b7b8c;
+   grid-area: firstElement;
+ }
+ .secondElement{
+   background-color: #6b7b8c;
+   grid-area: secondElement;
+ }
+ .thirdElement{
+   background-color: #6b7b8c;
+   grid-area: thirdElement;
+ }
+ #principal footer{
+   background-color: #6b7b8c;
+   grid-area: footer;
+ }
+
  footer .container{
     background-color: #322e2f;
  }
@@ -258,43 +303,6 @@ header{
    outline: none;
 }
 
-
-#principal{
-   display: grid;
-   height: 97vh;
- }
-
- .nav{
-   background-color: #b9f1c5;
-   font-family: sans-serif;
- }
- main{
-   background-color: #86acf2;
-   font-family: sans-serif;
- }
- .sideBar{
-   background-color: #32ae4f;
-   font-family: sans-serif;
- }
- .firstElement{
-   background-color: #49d4de;
-   font-family: sans-serif;
- }
- .secondElement{
-   background-color: #f763bf;
-   font-family: sans-serif;
- }
- .thirdElement{
-   background-color: #32ae4f;
-   font-family: sans-serif;
- }
- #principal footer{
-   background-color: #232e4f;
-   font-family: sans-serif;
- }
-
-
-
 @media screen and (max-width:900px){
     .navbar{
         padding: 0;
@@ -376,6 +384,7 @@ footer .row{
 footer .foooter-col ul{
    margin-left: 20px;
    margin-bottom: 20px;
+   align-items: center;
 }
 
 .foooter-col input{
