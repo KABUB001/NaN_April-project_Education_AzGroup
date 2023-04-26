@@ -1,4 +1,3 @@
-
 const menuHumberger = document.querySelector("#menu-hamburger")
 const navLinks = document.querySelector(".nav-links")
 
