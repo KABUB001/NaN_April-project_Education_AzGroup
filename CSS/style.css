@@ -186,20 +186,20 @@ h1{
    color: #12a4d9;
 }
 
-.local{
+#local{
    margin: 20px;
    display: flex;
    width: 80%;
    margin-left: 15%;
 }
 
-.local iframe{
+#local iframe{
    width: 40%;
    border: 1px solid;
    height: 500px;
    box-shadow: 4px 4px 12px rgba(39, 68, 173, 0.68);
 }
-.local .form{
+#local .form{
    border: 1px solid red;
    width: 40%;
    margin-right: 40px;
