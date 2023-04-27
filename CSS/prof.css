@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 .preimage{
@@ -12,6 +14,68 @@
     width: 100%;
     
 }
+.logo-img{
+    position: absolute;
+    left: 10px;
+ }
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar a{
+    color:#322e2f;
+}
+
+.navbar .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #12a4d9;
+}
+
+.navbar span{
+    color: rgb(244, 127, 127);
+}
+
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+   margin: 0 25px;
+}
+
+
+.navbar .nav-links ul li.active a{
+   color: #12a4d9;
+   font-weight: 600;
+ }
+
+ .navbar .fa-solid{
+    position: absolute;
+    width: 35px;
+    top: 50px;
+    right: 50px;
+    display: none;
+ }
+
+ .nav-links.mobile-menu{
+    margin-left: 0;
+
+ }
 
 .contain{
    display: flex;
@@ -326,6 +390,8 @@ footer .foooter-col ul{
 .emoji1{
     color: #12a4d9;
 }
+
+
  @media screen and (max-width: 1058px){
     .texte p{
         font-size: 15%;
