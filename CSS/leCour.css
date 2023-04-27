@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.logo-img{
+    position: absolute;
+    left: 10px;
+ }
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar a{
+    color:#322e2f;
+}
+
+.navbar .logo{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #12a4d9;
+}
+
+.navbar span{
+    color: rgb(244, 127, 127);
+}
+
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+   margin: 0 25px;
+}
+
+
+.navbar .nav-links ul li.active a{
+   color: #12a4d9;
+   font-weight: 600;
+ }
+
+ .navbar .fa-solid{
+    position: absolute;
+    width: 35px;
+    top: 50px;
+    right: 50px;
+    display: none;
+ }
+
+ .nav-links.mobile-menu{
+    margin-left: 0;
+
+ }
+ @media screen and (max-width:900px){
+    .navbar{
+        padding: 0;
+    }
+    .navbar .fa-solid{
+        display: block;
+    }
+
+    .nav-links{
+       top: 0;
+       left: 0;
+       position: absolute;
+       backdrop-filter: blur(8px);
+       background-color: #e7eee873;
+       width: 100%;
+       font-size: 12px;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: -100%;
+       transition: all 0.5s ease;
+    }
+    .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+    }
+
+ .container{
+    background-image: url("../Images/livre.webp");
+    background-size: cover;
+    object-fit: cover;
+    height: 90vh;
+    width: 100%;
+ }
+
+ /* .content{
+    max-width: 1140px;
+    margin: 0 auto;
+ } */
+
+ .contain{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+    gap: 5em;
+ }
+ .accessoire{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+ }
+ .accessoire input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgb(244, 127, 127);
+    outline: none;
+    padding: 5px;
+    
+}
+
+.btn{
+    position: absolute;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(244, 127, 127);
+    background:  rgb(244, 127, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1px;
+}
+.barre{
+    height: 2px;
+    width: 100%;
+    border: 2px solid #12a4d9;
+    margin-top: 3%;
+}
+
+.sujet{
+    display: flex;
+    gap: 1%;
+   margin-top: 8%;
+}
+
+.partie2 img{
+    width: 750px;
+    height: 375px;
+}
