@@ -1,0 +1,164 @@
+:root{
+    --color1 : #12A4D9;
+    --color1B : #12a4d9b7;
+    --color2 : #CA776F;
+
+}
+
+*, ::before, ::after{
+   box-sizing: border-box ;
+   margin: 0;
+   padding: 0;
+   
+
+}
+nav{
+    width:auto;
+    height: 55px;
+    background-color: var(--color1B);
+}
+nav ul{
+    position: relative;
+    right: 0;
+    height:100%;
+    width:auto;
+    /* width:18rem; */
+    align-items: center;
+    display:flex;
+    justify-content: end;
+    gap: 5rem;
+    list-style-type:none;
+  
+}
+.container-global{
+    width: 80%;
+    max-width: 1040px;
+    margin: 0 auto;
+    height: auto;
+}
+/* .logo-1{
+    width:60%
+} */
+.logo-1 img{
+    width: 14.37rem;
+    height: 6.87rem;
+    
+}
+.entete{
+    margin-top: 1rem;
+    display:flex;
+    justify-content: space-between;
+}
+.anonces{
+    height: 54px;
+    background-color: #d9d9d948 ;
+    
+}
+.anonces div{
+    height: 100%;
+    width: 125px;
+    background-color: #ca776f8b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ligne{
+    margin-top: 1rem;
+    width:auto;
+    height: 0;
+    border: dashed black;
+}
+
+.logo-2{
+    display: flex;
+}
+.logo-2 img{
+    width: 10rem;
+    height: 2.7rem;
+}
+.recent{
+    height: auto;
+    width:auto;
+    max-width: 1000px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.recCard{
+        width: 160px;
+        height: 170px;
+        border-radius: .2rem 2rem .2rem 2rem;
+        border:1px solid black ;
+        overflow: hidden;
+        margin-top:1rem
+       
+    }
+
+    .cours{
+        height: auto;
+        width:auto;
+        max-width: 1000px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .coursCard{
+        width: 20%;
+        height: 300px;
+        border-radius: .2rem;
+        border:1px solid black ;
+        box-shadow:1px 1px black ;
+        overflow: hidden;
+        margin-top:1rem;
+        margin-left:1rem;
+       
+    }
+
+    .coursCard img{
+        height:70%;
+        width:100%;
+    }
+
+    .pagination{
+        font-weight: bolder;
+        padding:1rem;
+        width:auto
+    }
+    .pagination div{
+        width:25%;
+        /* background-color: #12A4D9; */
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    .suivant{
+        margin-left:3.5rem;
+        cursor: pointer;
+    }
+    .precedent{
+        cursor: pointer;
+    }
+
+    .fa-sort-down{
+        color: #12A4D9 ;
+        position:relative;
+        margin-bottom: 0px;
+    }
+footer{
+    background-color: black;
+    font-family: 'inspiration','Tangerine';
+    font-size: 1.2rem;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:2rem;
+    
+}
